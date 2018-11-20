@@ -1,7 +1,7 @@
 --CREATE DATABASE Consultorio
 
 
-Create table TB_Cliente(
+Create table tb_cliente(
 IDCliente int Primary key,
 Nombre varchar(40) not null,
 Apellido varchar(20)not null,
@@ -12,24 +12,24 @@ NroDni varchar(40) not null
 );
 
 
-Create table TB_Provincia(
+Create table tb_provincia(
 IDProvincia int Primary key,
 Nombre varchar(50) not null
 );
 
-Create table TB_Localidad(
+Create table tb_localidad(
 IDLocalidad int Primary Key,
 Nombre varchar(50) not null,
 IDProvincia int,
 Foreign Key (IDProvincia) references TB_Provincia(IDProvincia) 
 ); 
 
-Create Table TB_Rol(
+Create Table tb_rol(
 IDRol  int primary key,
 Descripcion varchar(50) not null
 );
 
-Create Table TB_rol_Usuario(
+Create Table tb_rol_Usuario(
 IDUsuario_rol int primary key,
 Fecha_creacion date not null,
 Fecha_modificacion date,
@@ -38,32 +38,24 @@ Foreign Key (IDRol) references TB_Rol(IDRol)
 );
 
 
-Create Table TB_Usuario(
+Create Table tb_usuario(
 IDUsuario int primary Key,
 Nombre varchar(50) not null,
 Apellido varchar(50) not null,
 IDUsuario_rol int ,
 Foreign Key (IDUsuario_rol) references TB_rol_Usuario(IDUsuario_rol),
 Pasword varchar(10),
-IDRol int,
 Foreign Key (IDRol) references TB_Rol(IDRol)
 );
 
 
-Create Table TB_Fecha(
-IDFecha int primary Key,
-Anio int not null,
-Mes int not null,
-Dia int not null
-);
 
-
-Create Table TB_Especialidad(
+Create Table tb_especialidad(
 IDEspecialidad Int Primary Key,
 Descripcion varchar(100) not null
 );
 
-Create Table TB_Kinesiologo(
+Create Table tb_kinesiologo(
 IDMatricula int Primary key,
 Nombre varchar(50) not null,
 Apellido varchar(50) not null,
@@ -72,13 +64,12 @@ Foreign Key (IDEspecialidad) references TB_Especialidad(IDEspecialidad)
 );
 
 
-Create Table TB_Turno(
+Create Table tb_turno(
 IDCliente int,
 Foreign Key (IDCliente) references TB_Cliente(IDCliente) ,
 IDEspecialidad int ,
 Foreign Key (IDEspecialidad) references TB_Especialidad(IDEspecialidad),
-IDFecha int ,
-Foreign Key (IDFecha) references TB_Fecha(IDFecha) ,
+Fecha timestamp not null,
 IDMatricula int ,
 Foreign Key (IDMatricula) references TB_Kinesiologo(IDMatricula) ,
 IDUsuario int ,
