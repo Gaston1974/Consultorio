@@ -57,37 +57,37 @@ public class Opciones extends HttpServlet {
             
             case "1":  
                 
-                leedor.leer(out, "/root/NetBeansProjects/Consultorio/web/WEB-INF/out_ins_cli.html" );
+                leedor.leer(out, "/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/out_ins_cli.html" );
   
                 break;
               
             case "2":  
                
-                leedor.leer(out, "/root/NetBeansProjects/Consultorio/web/WEB-INF/out_ins_tur.html" );
+                leedor.leer(out, "/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/out_ins_tur.html" );
     
                 break;
              
             case "3": 
                 
-                leedor.leer(out, "/root/NetBeansProjects/Consultorio/web/WEB-INF/out_del_cli.html" );
+                leedor.leer(out, "/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/out_del_cli.html" );
 
                 break;
               
             case "4": 
                   
-                leedor.leer(out, "/root/NetBeansProjects/Consultorio/web/WEB-INF/out_sel_cli.html" );
+                leedor.leer(out, "/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/out_sel_cli.html" );
                  
                 break; 
                         
             case "5": 
                 
-                leedor.leer(out, "/root/NetBeansProjects/Consultorio/web/WEB-INF/out_sel_tur.html" );
+                leedor.leer(out, "/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/out_sel_tur.html" );
              
                 break;
                 
             case "6":
                 
-                leedor.leer(out, "/root/NetBeansProjects/Consultorio/web/WEB-INF/out_sel_tur_k.html" );
+                leedor.leer(out, "/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/out_sel_tur_k.html" );
        }
      }      
    }   

@@ -122,7 +122,7 @@ public class Query extends HttpServlet {
                     if ( flag == 1 )
                         if ( result.size() != 0)  {
                           try {
-                                fw = new FileWriter("/root/NetBeansProjects/Consultorio/web/WEB-INF/results.html");
+                                fw = new FileWriter("/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/results.html");
                                 fw.write("<!DOCTYPE html>\n<html>\n<head>\n<title>Query</title>\n</head>\n<body>\n<br>\n<table border=\"1\">" +
                                          "<tr>" +
                                          "<td><font size=2 color=\"black\" face=\"helvetica\">id cliente</font></td>\n" +
@@ -152,7 +152,7 @@ public class Query extends HttpServlet {
             
                             } 
                         
-                        leedor.leer(out, "/root/NetBeansProjects/Consultorio/web/WEB-INF/results.html" );
+                        leedor.leer(out, "/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/results.html" );
   
                     } else 
                             impresor.imprimir(out, "red", "no se han encontrado resultados.", "Querys");
@@ -289,7 +289,7 @@ public class Query extends HttpServlet {
                                                     
                     if ( fg == 1 && res.size() != 0 )  {
                         try {
-                                fwr = new FileWriter("/root/NetBeansProjects/Consultorio/web/WEB-INF/results_2.html");
+                                fwr = new FileWriter("/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/results_2.html");
                                 fwr.write("<!DOCTYPE html>\n<html>\n<head>\n<title>Query</title>\n</head>\n<body>\n<br>\n<table border=\"1\">" +
                                          "<tr>" +
                                          "<td><font size=2 color=\"black\" face=\"helvetica\">id cliente</font></td>\n" +
@@ -317,7 +317,7 @@ public class Query extends HttpServlet {
             
                             } 
                         
-                        leedor.leer(out, "/root/NetBeansProjects/Consultorio/web/WEB-INF/results_2.html" );
+                        leedor.leer(out, "/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/results_2.html" );
            
                     } else                                   
                            
@@ -342,7 +342,7 @@ public class Query extends HttpServlet {
                     if ( fag == 1 ) 
                             if ( resdo.size() != 0 )  {
                         try {
-                                fwtr = new FileWriter("/root/NetBeansProjects/Consultorio/web/WEB-INF/results_2.html");
+                                fwtr = new FileWriter("/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/results_2.html");
                                 fwtr.write("<!DOCTYPE html>\n<html>\n<head>\n<title>Query</title>\n</head>\n<body>\n<br>\n<table border=\"1\">" +
                                          "<tr>" +
                                          "<td><font size=2 color=\"black\" face=\"helvetica\">id cliente</font></td>\n" +
@@ -370,7 +370,7 @@ public class Query extends HttpServlet {
             
                             } 
                         
-                        leedor.leer(out, "/root/NetBeansProjects/Consultorio/web/WEB-INF/results_2.html" );
+                        leedor.leer(out, "/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/results_2.html" );
            
                     } else                                   
                            

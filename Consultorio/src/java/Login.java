@@ -59,7 +59,7 @@ public class Login extends HttpServlet {
                 
     if ( !result.equals("") && password.equals(result) ) 
         
-        leedor.leer(out, "/root/NetBeansProjects/Consultorio/web/WEB-INF/opciones.html" );
+        leedor.leer(out, "/home/gaston/Consultorio/Consultorio/Consultorio/web/WEB-INF/opciones.html" );
            
 
     else {
