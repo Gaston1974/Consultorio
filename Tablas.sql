@@ -43,6 +43,7 @@ IDUsuario int primary Key,
 Nombre varchar(50) not null,
 Apellido varchar(50) not null,
 IDUsuario_rol int ,
+IDRol  int,
 Foreign Key (IDUsuario_rol) references TB_rol_Usuario(IDUsuario_rol),
 Pasword varchar(10),
 Foreign Key (IDRol) references TB_Rol(IDRol)

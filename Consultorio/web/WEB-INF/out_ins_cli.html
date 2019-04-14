@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Consultorio</title>
+</head>
+<body>
+	<br><br><br><br><br><br><br><br><br><br>
+	<form name="Form" value="insert" action="http://localhost:8084/Consultorio/Query" method="get">
+	<label><p align=center><font size=2 face="helvetica"> <b>Ingrese los datos requeridos.</b></p></label><br><br>
+
+	<table style="margin: 0 auto;" width="200" cellspacing="1" cellpadding="3" border="0" bgcolor="#80A93E">
+	<tr>
+   	<td bgcolor="#B7F259"><font size=1 face="verdana, arial, helvetica"><b>Cliente</b></font></td>
+	</tr>
+	<tr>
+   	<td bgcolor="#F5ECB9"> 
+
+	<table width="95%" cellspacing="1" cellpadding="1" border="0" align=center>
+	<tr>
+   	<td><font face="verdana, arial, helvetica" size=1> 
+	<label>DNI: </label>
+	<input type="text" name="documento" ><br>
+	</font></td> 	
+	</tr>
+   	
+	<tr>
+      	<td><font face="verdana, arial, helvetica" size=1> 
+	<!-- condicionales para Alta -->
+	<label>NOMBRE: </label>
+	<input type="text" name="nombre" ><br>
+	</font></td>
+   	</tr> 
+
+	<tr>
+      	<td><font face="verdana, arial, helvetica" size=1> 
+	<label>APELLIDO: </label>
+	<input type="text" name="apellido" ><br>
+	</font></td>
+   	</tr> 
+
+	<tr>
+      	<td><font face="verdana, arial, helvetica" size=1> 
+	<label>ID PROVINCIA: </label>
+	<input type="text" name="provincia" ><br>
+	</font></td>
+   	</tr> 
+        
+        <tr>
+      	<td><font face="verdana, arial, helvetica" size=1> 
+	<label>TELEFONO: </label>
+	<input type="text" name="telefono" ><br>
+	</font></td>
+   	</tr> 
+        
+        <tr>
+      	<td><font face="verdana, arial, helvetica" size=1> 
+	<label>ID LOCALIDAD : </label>
+	<input type="text" name="localidad" ><br>
+	</font></td>
+   	</tr> 
+
+</table>
+</td>
+</tr>
+</table> 
+	<br>
+	<input style="margin-left: 670px" size=2 type="submit" name="request" value="Insertar" >
+</form>
+</body>
+</html>

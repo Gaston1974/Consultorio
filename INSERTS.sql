@@ -7,12 +7,10 @@ INSERT INTO tb_rol (idrol, descripcion)
 INSERT INTO tb_rol_usuario (idusuario_rol, fecha_creacion, fecha_modificacion, idrol) 
 	VALUES (1, '2018-10-21', '2018-10-21', 1)
 INSERT INTO tb_rol_usuario (idusuario_rol, fecha_creacion, fecha_modificacion, idrol) 
-	VALUES (1, '2018-10-21', '2018-10-21', 1)
+	VALUES (2, '2018-10-21', '2018-10-21', 1)
 --tb_usuario
 INSERT INTO tb_usuario (idusuario, nombre, apellido, idusuario_rol, pasword, idrol) 
 	VALUES (1, 'Gaston', 'Chiavasco', NULL, NULL, NULL)
-INSERT INTO tb_rol (idrol, descripcion) 
-	VALUES (2, 'usuario')
 --tb_especialidad
 INSERT INTO tb_especialidad (idespecialidad, descripcion) 
 	VALUES (1, 'postura')
